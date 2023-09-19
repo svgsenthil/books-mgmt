@@ -12,8 +12,8 @@ if($_SERVER['REQUEST_METHOD'] == "GET"):
     $delete_data = $crud->delete();
 
     if($delete_data):
-        header("location:index.php?record_delete_status=success");
+        header("location:show-books.php?record_delete_status=success");
     else:
-        echo "<p>Data has not been deleted</p>";   
+        echo "<div class='text-center'><p>Data has not been deleted</p></div>";
     endif;
 endif;
